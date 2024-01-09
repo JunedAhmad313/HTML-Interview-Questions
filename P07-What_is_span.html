@@ -1,0 +1,54 @@
+
+<!-- 
+    Q: What is the <span> tag in HTML?
+
+     
+    Ans: ★ The <span> tag is an inline HTML element that occupies only the necessary width for its content.
+
+         ★ It is primarily used to style specific content on a website or format a document.
+
+         ★ The <span> tag does not have any unique attributes of its own; instead, it utilizes global attributes
+           such as id and class. -->
+
+           <!DOCTYPE html>
+           <html lang="en">
+           <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Span tag</title>
+            <style>
+                .conatiner {
+                    width: 50%;
+                    margin: 0 auto ;
+                    background-color: aqua;
+                    padding: 1.25rem;
+                    border: 1px solid fuchsia;
+
+                }
+                .cls{
+                    background-color:yellow;
+                }
+                .cls2{
+                    background-color: azure;
+                    border: 1px dashed mediumblue;
+                }
+
+            </style>
+           </head>
+           <body>
+            <div class="conatiner">
+                <h1> Welcome <span class="cls"> to</span>  my website </h1>
+
+                <p> this is a <spn class="cls2">sample content</spn> inside a span tag </p>
+
+                <ul>
+                    <li> Item 1</li>
+                    <li> Item 2 </li>
+                    <li> Item 3</li>
+                </ul>
+            </div>
+            
+           </body>
+           </html>
+
+           
