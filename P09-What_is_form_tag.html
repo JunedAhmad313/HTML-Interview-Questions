@@ -1,0 +1,121 @@
+<!-- 
+         Ques - What is form tag in html ?                                                                       
+
+        Ans -   the <form> tag is used to create an HTML form. A form is a container for input elements,
+                such as text fields, checkboxes, radio buttons, submit buttons, and more. It is used to 
+                collect user input and submit it to a server for processing.     -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Projects</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #c107a266;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #ffffff7f;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #32d978;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+  </style>
+</head>
+<body>
+
+  
+
+    <!-- Step 1: Form tag start -->
+  <form action="thanksMsg.html" target="_self"  >
+
+    <!-- Step 2: Lable and input for Username -->
+    <label for="Username"> Username : </label>
+    <input type="text" name="Username" required minlength="4" maxlength="20">
+
+
+    <!-- Step 3: Lable and input for Password -->
+    <label for="Password"> Password :</label>
+    <input type="password" name="password" required >
+
+
+    <!-- Step 4: Lable and input for Email -->
+    <label for="email"> Email :</label>
+    <input type="email" name="email" placeholder="user@example.com" required>
+
+
+    <!-- Step 5: Lable and input for Birthdate -->
+    <label for="birthdate"> Birthdate :</label>
+    <input type="date" name="birthdate" required>
+
+
+    <!-- Step 6: Lable and select for Gender  -->
+    <label for="gender"> Gender :</label>
+    <select name="gender" required>
+
+       <option value="male"> Male </option>
+       <option value="female"> Female </option>
+
+    </select>
+
+    <!-- Step 7: Lable and textarea for Bio  -->
+    <label for="bio"> Bio :</label>
+    <textarea name="bio" rows="4" placeholder= " Tell us about yourself...."></textarea>
+
+
+    <!-- Step 8: Lable and input for Profile Picture  -->
+    <label for="profile-pic"> Profile Picture </label>
+    <input type="file" name="profile-pic" accept="image/*">
+
+
+    <!-- Step 9: Submit Button  -->
+    <input type="submit" value="Submit">
+
+  </form>
+    <!-- Step 10: Form tag End  -->
+
+  
+  
+</body>
+</html>
+
+
+
+ 
+
+
